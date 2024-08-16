@@ -1,0 +1,14 @@
+<%- include('./header.ejs') %>
+<body>
+    <% if(users.length > 0) { %>
+        <ul>
+            <% users.forEach(user => { %>
+                <li><%= user.userName %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+</body>
+
+</html>
+
+
